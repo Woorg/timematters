@@ -1,0 +1,78 @@
+.page
+	min-height 100vh
+	display flex
+	flex-direction column
+	background-color #505eff
+	color #fff
+	font-family $ml
+	font-size 18px
+	letter-spacing .6px
+	&__inner
+		flex 0 1 auto
+
+
+.container
+	margin-right auto
+	margin-left auto
+	padding-left 15px
+	padding-right 15px
+	max-width 1270px
+	width 100%
+
+
+.row
+	margin-left -10px
+	margin-right -10px
+	display flex
+	flex-flow row wrap
+.col
+	padding-right 10px
+	padding-left 10px
+	width 420px
+	width 33.2%
+	+r($tL)
+		width 100%
+
+.col-half
+	padding-right 10px
+	padding-left 10px
+	width 630px
+	width ratio-percentage(610, 1240)
+	+r($tL)
+		width 100%
+	&:last-child
+		margin-right 0
+
+.title
+	font-family $a
+	font-size 30px
+	font-weight 500
+	letter-spacing 1.8px
+	line-height 1.27
+	text-transform uppercase
+
+
+.button
+	border none
+	display inline-block
+	opacity 1
+	text-decoration none
+	tr(opacity .3s ease)
+	&:hover
+		opacity 0.8
+		tr(opacity .3s ease)
+
+
+.wysiwig
+	p
+		margin-bottom 84px
+		font-family $pS
+		font-size 22px
+		font-weight 400
+		letter-spacing 0.55px
+		line-height 1.6
+		&:last-child
+			margin-bottom 0
+
+
+
