@@ -1,0 +1,8 @@
+
+# BEGIN W3TC Page Cache core
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+  RewriteCond %{HTTP_USER_AGENT} ^pycurl [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^Wget [NC,OR]
+</IfModule>
+# END W3TC Page Cache core
